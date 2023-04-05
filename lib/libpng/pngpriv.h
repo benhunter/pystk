@@ -171,7 +171,7 @@
 #endif
 
 
-#if PNG_ARM_NEON_OPT > 0
+#if PNG_ARM_NEON_OPT > 2
    /* NEON optimizations are to be at least considered by libpng, so enable the
     * callbacks to do this.
     */
