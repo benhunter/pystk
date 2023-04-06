@@ -6,27 +6,36 @@ Tested on M1 Mac in zsh, with Python 3.9.
 
 1. Prerequisites
 
+Assumes [Homebrew](https://brew.sh/) is already installed. Info about [XCode command line tools](https://mac.install.guide/commandlinetools/4.html).
+
 ```shell
-xcode-select --install
+xcode-select --install # XCode command line tools
 brew install cmake python@3.9
 ```
 
 2. Clone SuperTuxKart
 
-git clone https://github.com/philkr/pystk.git
+```shell
+git clone https://github.com/benhunter/pystk.git
 cd pystk
+```
 
 3. Build from source
+
+Build with Python 3.9. Python 3.11 did not work for me.
 
 ```shell
 python39 -m venv venv --system-site-packages
 source venv/bin/activate
 pip install requests
+
 mkdir build
 cd build
 cmake ..
 make
 cd ..
+
+# Make sure the file we need is here:
 ls -lah pystk.cpython-39-darwin.so
 ```
 
@@ -36,7 +45,7 @@ ls -lah pystk.cpython-39-darwin.so
 cd pystk_data
 python setup.py fetch_data
 deactivate
-PSTK_DIR=$(pwd)
+PSTK_DIR=$(pwd) # will use later
 ```
 
 5. Copy the binary and game assets to your site-packages
