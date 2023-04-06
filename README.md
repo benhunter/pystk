@@ -78,6 +78,8 @@ cp -r $PSTK_DIR/pystk_data $SITE_PACKAGES_DIR
 pip install imageio imageio_ffmpeg
 ```
 
+Credit to Ander Murillo for doing the hard work of finding the changes to make for M1 and making the original instructions! Thank you!
+
 
 ## Original README
 
