@@ -22,7 +22,7 @@ cd pystk
 
 3. Build from source
 
-Build with Python 3.9. Python 3.11 did not work for me.
+Build with Python 3.9. Python 3.11 did not work for me. Python 3.10 is unconfirmed.
 
 ```shell
 python39 -m venv venv --system-site-packages
