@@ -58,7 +58,7 @@ You must copy `pystk.cpython-39-darwin.so` into your site-packages directory so 
 Find where to put the binary: 
 
 ```shell
-python3.9 -c "import site; print(''.join(site.getsitepackages()))"`
+python3.9 -c "import site; print(''.join(site.getsitepackages()))"
 ```
 
 Similarly, copy the entire pystk_data directory into the site-packages directory.
