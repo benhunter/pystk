@@ -15,6 +15,8 @@ brew install cmake python@3.9
 
 2. Clone SuperTuxKart
 
+This fork has changes for M1 Mac that are not in the upstream.
+
 ```shell
 git clone https://github.com/benhunter/pystk.git
 cd pystk
